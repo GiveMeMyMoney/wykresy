@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="616.0" prefWidth="686.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.Controller">
+  <children>
+    <VBox id="VBox" alignment="CENTER" layoutX="2.0" layoutY="0.0" prefHeight="602.0" spacing="5.0">
+      <children>
+        <BarChart id="ID_CHART_1" fx:id="ID_CH1" prefHeight="277.0" prefWidth="445.0" title="Chart1">
+          <xAxis>
+            <CategoryAxis side="BOTTOM" />
+          </xAxis>
+          <yAxis>
+            <NumberAxis side="LEFT" />
+          </yAxis>
+        </BarChart>
+        <PieChart id="PieChart" fx:id="ID_CH2" prefHeight="284.0" prefWidth="451.0" title="Chart2" />
+      </children>
+    </VBox>
+    <Group id="Group" layoutX="512.0" layoutY="134.0" scaleX="1.0" scaleY="1.0">
+      <children>
+        <Text layoutX="0.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of students">
+          <font>
+            <Font name="Andalus" size="15.0" />
+          </font>
+        </Text>
+        <TextField id="edName" fx:id="ID_TF_NUMBER" layoutX="33.0" layoutY="23.0" prefWidth="55.0" promptText="Number" text="" />
+      </children>
+    </Group>
+    <TableView fx:id="ID_TABLE_VIEW" layoutX="496.0" layoutY="269.0" prefHeight="200.0" prefWidth="152.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Student" fx:id="COL_STUDENT" />
+        <TableColumn prefWidth="75.0" text="Mark" fx:id="COL_MARK" />
+      </columns>
+    </TableView>
+    <Button id="btnRemoveAddress" layoutX="487.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#generateBtn" prefHeight="41.0" prefWidth="83.0" text="Generate" />
+    <Button id="btnRemoveAddress" layoutX="575.0" layoutY="199.0" mnemonicParsing="false" onMouseClicked="#clearBtn" prefHeight="40.0390625" prefWidth="83.0" text="Clear List" />
+    <HBox id="HBox" alignment="CENTER" layoutX="512.0" layoutY="510.0" spacing="5.0">
+      <children>
+        <CheckBox fx:id="CB_CHART_1" mnemonicParsing="false" text="Chart 1" />
+        <CheckBox fx:id="CB_CHART_2" mnemonicParsing="false" text="Chart 2" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>
