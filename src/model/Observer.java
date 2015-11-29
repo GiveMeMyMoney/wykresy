@@ -16,14 +16,13 @@ import java.util.Map;
  * Klasy które OBSERWUJA
  */
 public class Observer {
-    private List<Student> students = new ArrayList<>();
+    /*private List<Student> students = new ArrayList<>();
 
     public Observer(List<Student> students) {
         this.students = students;
     }
     public Observer() {
     }
-
 
     public void update(List<Student> students) {
         this.students.clear();
@@ -35,5 +34,5 @@ public class Observer {
         return "Observer{" +
                 "students=" + this.students +
                 '}';
-    }
+    }*/
 }

@@ -16,15 +16,15 @@
   <children>
     <VBox id="VBox" alignment="CENTER" layoutX="2.0" layoutY="0.0" prefHeight="602.0" spacing="5.0">
       <children>
-        <BarChart id="ID_CHART_1" fx:id="ID_CH1" prefHeight="277.0" prefWidth="445.0" title="Chart1">
+        <BarChart id="ID_CH1" fx:id="ID_BAR_CHART" prefHeight="277.0" prefWidth="445.0" title="Chart1">
           <xAxis>
-            <CategoryAxis side="BOTTOM" />
+            <CategoryAxis fx:id="ID_BAR_CHART_AXIS_X" side="BOTTOM" />
           </xAxis>
           <yAxis>
             <NumberAxis side="LEFT" />
           </yAxis>
         </BarChart>
-        <PieChart id="PieChart" fx:id="ID_CH2" prefHeight="284.0" prefWidth="451.0" title="Chart2" />
+        <PieChart id="PieChart" fx:id="ID_PIE_CHART" prefHeight="284.0" prefWidth="451.0" title="Chart2" />
       </children>
     </VBox>
     <Group id="Group" layoutX="512.0" layoutY="134.0" scaleX="1.0" scaleY="1.0">
